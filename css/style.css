@@ -49,6 +49,8 @@ body {
   outline: 2px solid red;
 }
 .btn {
+  min-width: 160px;
+  height: 40px;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -56,6 +58,10 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
+  color: #ffffff;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background-color: transparent;
 }
 .title {
   font-family: "Raleway, sans-serif";
@@ -74,14 +80,29 @@ body {
   background-color: gray;
   padding-top: 32px;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 .header-logo {
+  margin-right: 130px;
 }
+
 .header-list {
+  display: flex;
+  gap: 30px;
 }
-.header-item {
+/*.header-item {
+  margin-right: 30px;
 }
+.header-item:last-child {
+  margin-right: 0;
+}*/
 .header-link {
   font-weight: 600;
   font-size: 12px;
@@ -101,7 +122,7 @@ body {
   color: #ffffff;
 }
 .header-btn {
-  color: var(--main-title-color) #ffffff;
+  color: #ffffff;
 }
 /*-------------HERO---------------*/
 .hero {
